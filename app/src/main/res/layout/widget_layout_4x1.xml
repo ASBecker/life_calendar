@@ -2,15 +2,15 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
+    android:padding="2dp"
     android:id="@+id/widget_container">
 
     <GridLayout
         android:id="@+id/dot_grid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:columnCount="52"
-        android:rowCount="90"
+        android:columnCount="180"
+        android:rowCount="26"
         android:useDefaultMargins="false"
         android:layout_gravity="fill"
         android:orientation="horizontal" />

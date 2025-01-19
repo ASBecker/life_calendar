@@ -7,5 +7,7 @@
     <string name="weeks_remaining">Weeks remaining: %1$d</string>
     <string name="save">Save</string>
     <string name="continue_button">Continue</string>
-    <string name="widget_description">Life Calendar Progress</string>
+    <string name="widget_description_3x3">Life Calendar Widget (3×3)</string>
+    <string name="widget_description_4x1">Life Calendar Widget (4×1)</string>
+    <string name="widget_description_4x3">Life Calendar Widget (4×3)</string>
 </resources> 

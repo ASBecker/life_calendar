@@ -1,11 +1,15 @@
 package com.example.lifecalendar.data
 
+import android.appwidget.AppWidgetManager
+import android.content.ComponentName
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
+import com.example.lifecalendar.widget.LifeCalendarWidget
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
-class SettingsRepository(context: Context) {
+class SettingsRepository(private val context: Context) {
     private val prefs: SharedPreferences = context.getSharedPreferences(
         "life_calendar_settings",
         Context.MODE_PRIVATE
@@ -21,6 +25,7 @@ class SettingsRepository(context: Context) {
         } ?: DEFAULT_BIRTH_DATE
         set(value) {
             prefs.edit().putString(KEY_BIRTH_DATE, value.toString()).apply()
+            updateWidgets()
         }
 
     var lifeExpectancy: Int
@@ -28,6 +33,7 @@ class SettingsRepository(context: Context) {
         set(value) {
             if (value in 1..150) {
                 prefs.edit().putInt(KEY_LIFE_EXPECTANCY, value).apply()
+                updateWidgets()
             }
         }
 
@@ -41,7 +47,21 @@ class SettingsRepository(context: Context) {
             } else {
                 prefs.edit().putBoolean(KEY_DARK_THEME, value).apply()
             }
+            updateWidgets()
         }
+
+    private fun updateWidgets() {
+        val appWidgetManager = AppWidgetManager.getInstance(context)
+        val widgetComponent = ComponentName(context, LifeCalendarWidget::class.java)
+        val widgetIds = appWidgetManager.getAppWidgetIds(widgetComponent)
+        
+        // Send update broadcast to the widget
+        val intent = Intent(context, LifeCalendarWidget::class.java).apply {
+            action = AppWidgetManager.ACTION_APPWIDGET_UPDATE
+            putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, widgetIds)
+        }
+        context.sendBroadcast(intent)
+    }
 
     companion object {
         private const val KEY_BIRTH_DATE = "birth_date"
