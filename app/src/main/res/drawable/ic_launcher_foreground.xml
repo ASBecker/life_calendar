@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Grid of 9 circles with varying opacity -->
+    <!-- First three dots: 100% -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M32,24 A8,8 0 1,1 32,40 A8,8 0 1,1 32,24"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M54,24 A8,8 0 1,1 54,40 A8,8 0 1,1 54,24"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M76,24 A8,8 0 1,1 76,40 A8,8 0 1,1 76,24"/>
+    
+    <!-- Fourth dot: 80% -->
+    <path
+        android:fillColor="#CC000000"
+        android:pathData="M32,46 A8,8 0 1,1 32,62 A8,8 0 1,1 32,46"/>
+    
+    <!-- Remaining dots: 30% -->
+    <path
+        android:fillColor="#4D000000"
+        android:pathData="M54,46 A8,8 0 1,1 54,62 A8,8 0 1,1 54,46"/>
+    <path
+        android:fillColor="#4D000000"
+        android:pathData="M76,46 A8,8 0 1,1 76,62 A8,8 0 1,1 76,46"/>
+    <path
+        android:fillColor="#4D000000"
+        android:pathData="M32,68 A8,8 0 1,1 32,84 A8,8 0 1,1 32,68"/>
+    <path
+        android:fillColor="#4D000000"
+        android:pathData="M54,68 A8,8 0 1,1 54,84 A8,8 0 1,1 54,68"/>
+    <path
+        android:fillColor="#4D000000"
+        android:pathData="M76,68 A8,8 0 1,1 76,84 A8,8 0 1,1 76,68"/>
+</vector> 
