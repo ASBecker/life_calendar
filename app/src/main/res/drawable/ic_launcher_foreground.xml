@@ -5,37 +5,37 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
     
-    <!-- Grid of 9 circles with varying opacity -->
+    <!-- Grid of 9 circles with varying opacity, scaled to fit within 66x66dp -->
     <!-- First three dots: 100% -->
     <path
         android:fillColor="#FF000000"
-        android:pathData="M32,24 A8,8 0 1,1 32,40 A8,8 0 1,1 32,24"/>
+        android:pathData="M38,33 A5,5 0 1,1 38,43 A5,5 0 1,1 38,33"/>
     <path
         android:fillColor="#FF000000"
-        android:pathData="M54,24 A8,8 0 1,1 54,40 A8,8 0 1,1 54,24"/>
+        android:pathData="M54,33 A5,5 0 1,1 54,43 A5,5 0 1,1 54,33"/>
     <path
         android:fillColor="#FF000000"
-        android:pathData="M76,24 A8,8 0 1,1 76,40 A8,8 0 1,1 76,24"/>
+        android:pathData="M70,33 A5,5 0 1,1 70,43 A5,5 0 1,1 70,33"/>
     
     <!-- Fourth dot: 80% -->
     <path
         android:fillColor="#CC000000"
-        android:pathData="M32,46 A8,8 0 1,1 32,62 A8,8 0 1,1 32,46"/>
+        android:pathData="M38,49 A5,5 0 1,1 38,59 A5,5 0 1,1 38,49"/>
     
     <!-- Remaining dots: 30% -->
     <path
         android:fillColor="#4D000000"
-        android:pathData="M54,46 A8,8 0 1,1 54,62 A8,8 0 1,1 54,46"/>
+        android:pathData="M54,49 A5,5 0 1,1 54,59 A5,5 0 1,1 54,49"/>
     <path
         android:fillColor="#4D000000"
-        android:pathData="M76,46 A8,8 0 1,1 76,62 A8,8 0 1,1 76,46"/>
+        android:pathData="M70,49 A5,5 0 1,1 70,59 A5,5 0 1,1 70,49"/>
     <path
         android:fillColor="#4D000000"
-        android:pathData="M32,68 A8,8 0 1,1 32,84 A8,8 0 1,1 32,68"/>
+        android:pathData="M38,65 A5,5 0 1,1 38,75 A5,5 0 1,1 38,65"/>
     <path
         android:fillColor="#4D000000"
-        android:pathData="M54,68 A8,8 0 1,1 54,84 A8,8 0 1,1 54,68"/>
+        android:pathData="M54,65 A5,5 0 1,1 54,75 A5,5 0 1,1 54,65"/>
     <path
         android:fillColor="#4D000000"
-        android:pathData="M76,68 A8,8 0 1,1 76,84 A8,8 0 1,1 76,68"/>
+        android:pathData="M70,65 A5,5 0 1,1 70,75 A5,5 0 1,1 70,65"/>
 </vector> 
