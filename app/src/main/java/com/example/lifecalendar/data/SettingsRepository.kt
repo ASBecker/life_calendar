@@ -67,7 +67,7 @@ class SettingsRepository(private val context: Context) {
         private const val KEY_BIRTH_DATE = "birth_date"
         private const val KEY_LIFE_EXPECTANCY = "life_expectancy"
         private const val KEY_DARK_THEME = "dark_theme"
-        private const val DEFAULT_LIFE_EXPECTANCY = 90
+        private const val DEFAULT_LIFE_EXPECTANCY = 80
         private val DEFAULT_BIRTH_DATE = LocalDate.of(1990, 1, 1)
     }
 } 

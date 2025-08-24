@@ -74,7 +74,7 @@ fun OnboardingScreen(
                 scope.launch {
                     birthdate?.let { date ->
                         viewModel.saveBirthdate(date)
-                        viewModel.saveLifespan(lifespan.toIntOrNull() ?: 80)
+                        viewModel.saveLifespan(lifespan.toIntOrNull() ?: 78)
                         viewModel.completeOnboarding()
                         onComplete()
                     }

@@ -56,7 +56,7 @@ fun HomeScreen() {
         // Week grid centered
         val today = LocalDate.now()
         val weeksLived = ChronoUnit.WEEKS.between(birthDate, today)
-        val totalWeeks = ChronoUnit.WEEKS.between(birthDate, birthDate.plusYears(lifeExpectancy.toLong()))
+        val totalWeeks = lifeExpectancy.toLong() * 52 // Simple calculation for clean grid
 
         WeekGrid(
             weeksLived = weeksLived,
